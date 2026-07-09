@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageDevGroup. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!-- Add a Google setup-info block to admin-scim's section. -->
+        <section id="magedevgroup_admin_scim">
+            <group id="google" translate="label" type="text" sortOrder="70"
+                   showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Google Workspace Setup</label>
+                <comment>How to wire Google Workspace auto-provisioning to this store's SCIM endpoint.</comment>
+                <field id="setup_info" translate="label" type="label" sortOrder="10"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Endpoint URL</label>
+                    <frontend_model>MageDevGroup\AdminScimGoogle\Block\Adminhtml\System\Config\SetupInfo</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
