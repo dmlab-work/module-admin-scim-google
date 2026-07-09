@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageDevGroup. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Di-merge the Google normalizer into admin-scim's provider-quirk seam. -->
+    <type name="MageDevGroup\AdminScim\Model\Normalization\RequestNormalizerChain">
+        <arguments>
+            <argument name="normalizers" xsi:type="array">
+                <item name="google" xsi:type="object">
+                    MageDevGroup\AdminScimGoogle\Model\Normalization\GoogleRequestNormalizer
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
