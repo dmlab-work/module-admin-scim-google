@@ -1,13 +1,13 @@
 <?php
 /**
- * Copyright © MageDevGroup. All rights reserved.
+ * Copyright © DMLab. All rights reserved.
  */
 declare(strict_types=1);
 
-namespace MageDevGroup\AdminScimGoogle\Test\Unit;
+namespace DmLab\AdminScimGoogle\Test\Unit;
 
-use MageDevGroup\AdminScim\Model\Normalization\RequestNormalizerChain;
-use MageDevGroup\AdminScimGoogle\Model\Normalization\GoogleRequestNormalizer;
+use DmLab\AdminScim\Model\Normalization\RequestNormalizerChain;
+use DmLab\AdminScimGoogle\Model\Normalization\GoogleRequestNormalizer;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -52,7 +52,7 @@ class DiConfigTest extends TestCase
     public function testRegisteredNormalizerImplementsTheExtensionPoint(): void
     {
         self::assertContains(
-            \MageDevGroup\AdminScim\Api\RequestNormalizerInterface::class,
+            \DmLab\AdminScim\Api\RequestNormalizerInterface::class,
             class_implements(GoogleRequestNormalizer::class)
         );
     }

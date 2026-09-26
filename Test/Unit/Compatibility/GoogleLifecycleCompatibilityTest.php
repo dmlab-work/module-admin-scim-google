@@ -1,14 +1,14 @@
 <?php
 /**
- * Copyright © MageDevGroup. All rights reserved.
+ * Copyright © DMLab. All rights reserved.
  */
 declare(strict_types=1);
 
-namespace MageDevGroup\AdminScimGoogle\Test\Unit\Compatibility;
+namespace DmLab\AdminScimGoogle\Test\Unit\Compatibility;
 
-use MageDevGroup\AdminScim\Api\RequestNormalizerInterface;
-use MageDevGroup\AdminScim\Model\Normalization\RequestNormalizerChain;
-use MageDevGroup\AdminScimGoogle\Model\Normalization\GoogleRequestNormalizer;
+use DmLab\AdminScim\Api\RequestNormalizerInterface;
+use DmLab\AdminScim\Model\Normalization\RequestNormalizerChain;
+use DmLab\AdminScimGoogle\Model\Normalization\GoogleRequestNormalizer;
 use PHPUnit\Framework\TestCase;
 
 /**
