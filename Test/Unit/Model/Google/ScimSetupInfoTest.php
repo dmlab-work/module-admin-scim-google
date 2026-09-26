@@ -1,14 +1,14 @@
 <?php
 /**
- * Copyright © MageDevGroup. All rights reserved.
+ * Copyright © DMLab. All rights reserved.
  */
 declare(strict_types=1);
 
-namespace MageDevGroup\AdminScimGoogle\Test\Unit\Model\Google;
+namespace DmLab\AdminScimGoogle\Test\Unit\Model\Google;
 
 use Magento\Framework\Escaper;
-use MageDevGroup\AdminScim\Model\Discovery\EndpointUrlBuilder;
-use MageDevGroup\AdminScimGoogle\Model\Google\ScimSetupInfo;
+use DmLab\AdminScim\Model\Discovery\EndpointUrlBuilder;
+use DmLab\AdminScimGoogle\Model\Google\ScimSetupInfo;
 use PHPUnit\Framework\TestCase;
 
 /**

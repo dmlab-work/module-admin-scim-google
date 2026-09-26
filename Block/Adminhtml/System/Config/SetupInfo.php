@@ -1,15 +1,15 @@
 <?php
 /**
- * Copyright © MageDevGroup. All rights reserved.
+ * Copyright © DMLab. All rights reserved.
  */
 declare(strict_types=1);
 
-namespace MageDevGroup\AdminScimGoogle\Block\Adminhtml\System\Config;
+namespace DmLab\AdminScimGoogle\Block\Adminhtml\System\Config;
 
 use Magento\Backend\Block\Template\Context;
 use Magento\Config\Block\System\Config\Form\Field;
 use Magento\Framework\Data\Form\Element\AbstractElement;
-use MageDevGroup\AdminScimGoogle\Model\Google\ScimSetupInfo;
+use DmLab\AdminScimGoogle\Model\Google\ScimSetupInfo;
 
 /**
  * System-config frontend model rendering the Google SCIM setup info block.

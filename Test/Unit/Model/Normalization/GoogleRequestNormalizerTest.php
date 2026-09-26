@@ -1,13 +1,13 @@
 <?php
 /**
- * Copyright © MageDevGroup. All rights reserved.
+ * Copyright © DMLab. All rights reserved.
  */
 declare(strict_types=1);
 
-namespace MageDevGroup\AdminScimGoogle\Test\Unit\Model\Normalization;
+namespace DmLab\AdminScimGoogle\Test\Unit\Model\Normalization;
 
-use MageDevGroup\AdminScim\Api\RequestNormalizerInterface;
-use MageDevGroup\AdminScimGoogle\Model\Normalization\GoogleRequestNormalizer;
+use DmLab\AdminScim\Api\RequestNormalizerInterface;
+use DmLab\AdminScimGoogle\Model\Normalization\GoogleRequestNormalizer;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 

@@ -1,4 +1,4 @@
-# MageDevGroup_AdminScimGoogle
+# DmLab_AdminScimGoogle
 
 > Google Workspace SCIM provisioning for Magento 2 admin users.
 
@@ -9,17 +9,17 @@ A thin Google Workspace (Cloud Identity) provider plugin for the [`admin-scim`](
 ## Install
 
 ```bash
-composer require magedevgroup/module-admin-scim-google
-bin/magento module:enable MageDevGroup_AdminScimGoogle
+composer require dmlab/module-admin-scim-google
+bin/magento module:enable DmLab_AdminScimGoogle
 bin/magento setup:upgrade
 ```
 
-The single `require` pulls `magedevgroup/module-admin-scim` — the whole provisioning chain installs at once.
+The single `require` pulls `dmlab/module-admin-scim` — the whole provisioning chain installs at once.
 
 ## Set up Google Workspace auto-provisioning
 
-1. In Magento, open **Stores → Configuration → MageDevGroup → Admin SCIM**, enable Admin SCIM, and set a **Bearer Token**.
-2. Read the endpoint from **Stores → Configuration → MageDevGroup → Admin SCIM → Google Workspace Setup**. It is this store's SCIM base URL, e.g. `https://your-host/admin-scim/v2`.
+1. In Magento, open **Stores → Configuration → DMLab → Admin SCIM**, enable Admin SCIM, and set a **Bearer Token**.
+2. Read the endpoint from **Stores → Configuration → DMLab → Admin SCIM → Google Workspace Setup**. It is this store's SCIM base URL, e.g. `https://your-host/admin-scim/v2`.
 3. In the Google Admin console, open **Apps → Web and mobile apps → your SCIM app → Auto-provisioning** and enter:
 
    | Setting | Value |
@@ -45,8 +45,8 @@ Google pushes SCIM 2.0 requests to the `admin-scim` endpoint. This plugin regist
 
 - Magento **2.4.x**
 - PHP **8.3 – 8.5**
-- `magedevgroup/module-admin-scim` (installed automatically)
+- `dmlab/module-admin-scim` (installed automatically)
 
 ## License
 
-[OSL-3.0](LICENSE) © MageDevGroup. Commercial licensing and support: <https://magedevgroup.com>.
+[OSL-3.0](LICENSE) © DMLab. Commercial licensing and support: <https://dmlab.work>.

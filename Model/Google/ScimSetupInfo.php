@@ -1,13 +1,13 @@
 <?php
 /**
- * Copyright © MageDevGroup. All rights reserved.
+ * Copyright © DMLab. All rights reserved.
  */
 declare(strict_types=1);
 
-namespace MageDevGroup\AdminScimGoogle\Model\Google;
+namespace DmLab\AdminScimGoogle\Model\Google;
 
 use Magento\Framework\Escaper;
-use MageDevGroup\AdminScim\Model\Discovery\EndpointUrlBuilder;
+use DmLab\AdminScim\Model\Discovery\EndpointUrlBuilder;
 
 /**
  * Renders the admin setup surface for wiring Google Workspace (Cloud Identity)
@@ -53,7 +53,7 @@ class ScimSetupInfo
         $endpoint = $this->escaper->escapeHtml($this->getEndpointUrl());
 
         return <<<HTML
-<div class="magedevgroup-admin-scim-google-setup">
+<div class="dmlab-admin-scim-google-setup">
     <p>In the Google Admin console (Apps &rarr; Web and mobile apps &rarr; your SCIM
         app &rarr; Auto-provisioning), use these settings:</p>
     <ul>
@@ -67,7 +67,7 @@ class ScimSetupInfo
     <p>Google's SCIM client is near-standard, so no Google-side workaround is
         needed &mdash; users and groups push in RFC-7644 shape.</p>
     <p>Use the token configured under
-        <em>Stores &rarr; Configuration &rarr; MageDevGroup &rarr; Admin SCIM &rarr; Bearer Token</em>,
+        <em>Stores &rarr; Configuration &rarr; DmLab &rarr; Admin SCIM &rarr; Bearer Token</em>,
         and enable Admin SCIM there first.</p>
 </div>
 HTML;

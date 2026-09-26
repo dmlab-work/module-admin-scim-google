@@ -1,14 +1,14 @@
 <?php
 /**
- * Copyright © MageDevGroup. All rights reserved.
+ * Copyright © DMLab. All rights reserved.
  */
 declare(strict_types=1);
 
-namespace MageDevGroup\AdminScimGoogle\Test\Unit\Block\Adminhtml\System\Config;
+namespace DmLab\AdminScimGoogle\Test\Unit\Block\Adminhtml\System\Config;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
-use MageDevGroup\AdminScimGoogle\Block\Adminhtml\System\Config\SetupInfo;
-use MageDevGroup\AdminScimGoogle\Model\Google\ScimSetupInfo;
+use DmLab\AdminScimGoogle\Block\Adminhtml\System\Config\SetupInfo;
+use DmLab\AdminScimGoogle\Model\Google\ScimSetupInfo;
 use PHPUnit\Framework\TestCase;
 
 /**
