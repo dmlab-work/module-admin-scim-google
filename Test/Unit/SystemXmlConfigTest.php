@@ -1,6 +1,7 @@
 <?php
 /**
  * Copyright © DMLab. All rights reserved.
+ * Licensed under the Open Software License version 3.0 (OSL-3.0). See LICENSE.
  */
 declare(strict_types=1);
 
@@ -49,5 +50,16 @@ class SystemXmlConfigTest extends TestCase
         self::assertNotFalse($models);
         self::assertSame(1, $models->length);
         self::assertSame(SetupInfo::class, trim($models->item(0)->textContent));
+    }
+
+    public function testGroupCommentIsTranslatableAndStatesThePrecondition(): void
+    {
+        $group = $this->xpath->query('//section[@id="dmlab_admin_scim"]/group[@id="google"]')->item(0);
+        self::assertInstanceOf(\DOMElement::class, $group);
+        self::assertSame('label comment', $group->getAttribute('translate'));
+
+        $comment = trim($this->xpath->query('comment', $group)->item(0)->textContent);
+        self::assertStringContainsString('Auto-provisioning', $comment);
+        self::assertStringContainsString('admin-sso-google', $comment);
     }
 }
