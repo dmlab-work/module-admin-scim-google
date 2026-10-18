@@ -3,7 +3,7 @@
     "description": "Google Workspace (Cloud Identity) provider plugin for the admin-scim SCIM 2.0 server — adds the Google auto-provisioning setup panel (user provisioning only). Installing it pulls dmlab/module-admin-scim (and, transitively, sso-core).",
     "type": "magento2-module",
     "license": "OSL-3.0",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "require": {
         "php": "~8.3.0||~8.4.0||~8.5.0",
         "magento/framework": "^103.0",
