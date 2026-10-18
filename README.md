@@ -2,8 +2,7 @@
 
 > Google Workspace SCIM provisioning for Magento 2 admin users.
 
-[![CI](https://github.com/dmlab-work/module-admin-scim-google/actions/workflows/ci.yml/badge.svg)](https://github.com/dmlab-work/module-admin-scim-google/actions/workflows/ci.yml) [![codecov](https://codecov.io/gh/dmlab-work/module-admin-scim-google/graph/badge.svg)](https://codecov.io/gh/dmlab-work/module-admin-scim-google) [![Packagist](https://img.shields.io/packagist/dt/dmlab/module-admin-scim-google)](https://packagist.org/packages/dmlab/module-admin-scim-google)
-![License](https://img.shields.io/badge/license-OSL--3.0-green) ![Magento](https://img.shields.io/badge/Magento-2.4-orange) ![PHP](https://img.shields.io/badge/PHP-8.3--8.5-blue) ![Version](https://img.shields.io/badge/version-0.2.0-lightgrey)
+[![CI](https://github.com/dmlab-work/module-admin-scim-google/actions/workflows/ci.yml/badge.svg)](https://github.com/dmlab-work/module-admin-scim-google/actions/workflows/ci.yml) [![codecov](https://codecov.io/gh/dmlab-work/module-admin-scim-google/graph/badge.svg)](https://codecov.io/gh/dmlab-work/module-admin-scim-google) [![Packagist Version](https://img.shields.io/packagist/v/dmlab/module-admin-scim-google)](https://packagist.org/packages/dmlab/module-admin-scim-google) [![Downloads](https://img.shields.io/packagist/dt/dmlab/module-admin-scim-google)](https://packagist.org/packages/dmlab/module-admin-scim-google) [![PHP](https://img.shields.io/packagist/dependency-v/dmlab/module-admin-scim-google/php)](https://packagist.org/packages/dmlab/module-admin-scim-google) [![License](https://img.shields.io/packagist/l/dmlab/module-admin-scim-google)](LICENSE) ![Magento](https://img.shields.io/badge/Magento-2.4-orange)
 
 A thin Google Workspace (Cloud Identity) provider plugin for the [`admin-scim`](../module-admin-scim) SCIM 2.0 server. It covers user provisioning only and adds the Google auto-provisioning setup panel to the admin.
 

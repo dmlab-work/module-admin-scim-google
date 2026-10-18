@@ -43,17 +43,18 @@ class RegistrationTest extends TestCase
         self::assertContains('Magento_Backend', $sequenced);
     }
 
-    public function testSetupVersionMatchesReadmeBadge(): void
+    public function testSetupVersionMatchesComposerVersion(): void
     {
         $module = $this->loadModuleXml()->getElementsByTagName('module')->item(0);
         self::assertNotNull($module);
-        $setupVersion = $module->getAttribute('setup_version');
+        $composer = json_decode(
+            (string)file_get_contents(dirname(__DIR__, 2) . '/composer.json'),
+            true,
+            512,
+            JSON_THROW_ON_ERROR
+        );
 
-        $readme = (string)file_get_contents(dirname(__DIR__, 2) . '/README.md');
-        self::assertMatchesRegularExpression('#badge/version-([0-9.]+)-#', $readme);
-        preg_match('#badge/version-([0-9.]+)-#', $readme, $matches);
-
-        self::assertSame($matches[1], $setupVersion);
+        self::assertSame($composer['version'] ?? null, $module->getAttribute('setup_version'));
     }
 
     private function loadModuleXml(): \DOMDocument
