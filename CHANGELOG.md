@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1
+
+- Installs on Magento 2.4.7+ and PHP 8.2–8.5.
+- CI tests PHP 8.2–8.5; CI installs no longer notify Packagist.
+- Composer keywords, homepage and support links.
+- README: experimental notice, setup screenshot, compact requirements.
+
 ## 0.2.0
 
 - Removed the Google request normalizer — `admin-scim` already coerces a stringified `active`;
